@@ -1,0 +1,51 @@
+Subject: Replit Preview Shows "No Documents Found" Despite Files Existing in Project Folder
+Dear Replit Support/Community,
+I’m experiencing an issue with my Replit project where the preview pane displays a "No documents found. Try adjusting your search or filter criteria" message, even though my project folder contains documents that are accessible when I open the project’s public URL (e.g., https://<my-repl>.replit.dev) in a separate browser tab. I need assistance to fully resolve this issue so that the preview pane correctly displays my documents.
+Project Details:
+
+Replit Project Type: [Specify, e.g., HTML/CSS/JS, Node.js, Python Flask, etc. If unsure, describe what your project does, e.g., "static website" or "web server serving text files."]
+Project Name/URL: [Provide the Repl name or public URL if it’s public, e.g., https://replit.com/@username/project-name. If private, describe the setup.]
+Language/Tech Stack: [e.g., HTML, Node.js with Express, Python with http.server, etc.]
+Folder Structure: [Describe where your documents are located, e.g., "All documents are in a /docs folder in the root directory, containing files like doc1.txt, doc2.txt, etc."]
+
+Issue Description:
+
+When I run my project in Replit, the preview pane shows the message: "No documents found. Try adjusting your search or filter criteria."
+However, when I open the project’s public URL (e.g., https://<my-repl>.replit.dev) in a new browser tab, I can access the documents as expected, indicating the files are present and the server is working correctly outside the preview pane.
+The documents are located in [specify folder, e.g., /docs or root directory], but the preview pane does not display them.
+I suspect the issue may be related to the preview pane’s configuration, the .replit file, or how Replit serves files in the preview.
+
+Current .replit File Configuration (if applicable):
+[Include the contents of your .replit file, or state if it’s missing. For example:]
+textrun = "python -m http.server --directory docs 8000"
+[If you don’t have a .replit file, mention that you’re using the default configuration for your project type.]
+Steps I’ve Tried:
+
+Verified that the documents exist in the project folder using the Replit file explorer.
+Tested the public URL (*.replit.dev), which works fine and displays the documents.
+Restarted the Replit environment using kill 1 in the Shell.
+Checked for errors in the Console/Logs tab [mention any errors, e.g., "No errors found" or "Error: cannot find /index.html"].
+Ensured the correct directory is being served [e.g., "I updated my server to serve the /docs folder, but the preview still fails"].
+Tested in different browsers and incognito mode to rule out caching issues.
+
+Expected Behavior:
+
+The Replit preview pane should display my documents or the index.html file (if applicable) from the correct folder, matching the behavior of the public URL.
+If a directory listing is expected, it should show the files in the specified folder (e.g., /docs).
+
+Requested Solution:
+Please provide a step-by-step fix to ensure the Replit preview pane correctly displays my documents, including:
+
+Any changes needed to the .replit file to properly configure the preview.
+Modifications to my server code or project structure (if applicable) to ensure the preview pane serves the correct folder.
+Any Replit-specific settings or workarounds to resolve the "No documents found" error.
+If this is a known bug, please confirm and suggest a temporary fix or timeline for resolution.
+
+Additional Information:
+
+I’m using [browser name, e.g., Chrome, Firefox] and have tested in [incognito mode/other browsers] with no difference.
+My project has [e.g., "3000 text files in the /docs folder" or "a simple index.html with links to documents"].
+Any recent changes: [e.g., "I recently moved files to a /docs folder" or "I updated my server code"].
+Screenshots or logs: [If possible, mention that you can provide screenshots of the preview pane, file structure, or logs if needed.]
+
+I’d appreciate a complete solution to make the preview pane work as expected, or confirmation if this is a Replit bug requiring a platform-side fix. Please let me know if you need more details or access to my Repl (I can make it public if needed). Thank you for your help!
